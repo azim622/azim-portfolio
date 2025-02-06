@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,11 +12,12 @@ const Navbar = () => {
 
         {/* Desktop Menu */}
         <div className="hidden md:flex space-x-8">
-          <a href="#home" className="cursor-pointer text-gray-800 hover:text-blue-600 transition">Home</a>
-          <a href="#about" className="cursor-pointer text-gray-800 hover:text-blue-600 transition">About</a>
-          <a href="#skills" className="cursor-pointer text-gray-800 hover:text-blue-600 transition">Skills</a>
-          <a href="#projects" className="cursor-pointer text-gray-800 hover:text-blue-600 transition">Projects</a>
-          <a href="#contact" className="cursor-pointer text-gray-800 hover:text-blue-600 transition">Contact</a>
+          <Link to="/" className="cursor-pointer text-gray-800 hover:text-blue-600 transition">Home</Link>
+          <Link to="/about" className="cursor-pointer text-gray-800 hover:text-blue-600 transition">About</Link>
+          <Link to="/skill" className="cursor-pointer text-gray-800 hover:text-blue-600 transition">Skill</Link>
+          <Link to="/project" className="cursor-pointer text-gray-800 hover:text-blue-600 transition">Project</Link>
+          <Link to="/contract" className="cursor-pointer text-gray-800 hover:text-blue-600 transition">contract</Link>
+          
         </div>
 
         {/* Resume Button */}

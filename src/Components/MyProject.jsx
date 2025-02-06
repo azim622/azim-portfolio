@@ -37,7 +37,7 @@ const MyProject = () => {
 
   return (
     <div>
-      <section className="mx-16 my-10">
+      <section className="mx-16 my-16">
         <h2 className="text-3xl font-semibold text-center text-gray-800 mb-6">Projects</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {projectsData.map((project) => (
@@ -54,7 +54,7 @@ const MyProject = () => {
 
                   <button
                    
-                    className="bg-green-500 text-white px-4 py-2 rounded-md hover:bg-green-600 transition duration-300"
+                    className="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-green-600 transition duration-300"
                   >
                     View More
                   </button>
