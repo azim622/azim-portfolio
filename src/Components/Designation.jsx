@@ -5,7 +5,7 @@ import { FaGithub, FaLinkedin, FaTwitter, FaFacebook } from 'react-icons/fa';
 const Designation = () => {
   return (
     <div>
-       <section className="flex flex-col md:flex-row items-center justify-between  max-w-7xl mx-auto px-4 -mr-8 sm:px-6 lg:px-8 py-24">
+       <section className="flex flex-col md:flex-row items-center justify-between  max-w-7xl mx-auto px-4  sm:px-6 lg:px-8 py-24">
               {/* Information Section */}
               <motion.div 
                 initial={{ opacity: 0, x: -50 }} 
