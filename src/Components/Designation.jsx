@@ -19,7 +19,7 @@ const Designation = () => {
                   Passionate about building interactive web applications and
                   creating seamless user experiences.
                 </p>
-                <a href="/resume.pdf" download className="bg-blue-600 text-white px-4 py-2 my-16 rounded-lg shadow-md hover:bg-blue-700 transition-transform transform hover:scale-105">Resume</a>
+                <a href="/fazle-azim-resume.pdf" download className="bg-blue-600 text-white px-4 py-2 my-16 rounded-lg shadow-md hover:bg-blue-700 transition-transform transform hover:scale-105">Resume</a>
                 
                 {/* Social Links */}
                 <div className="flex space-x-4 mt-4">

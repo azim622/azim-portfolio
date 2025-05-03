@@ -37,7 +37,7 @@ const Navbar = () => {
 
         {/* Resume Button */}
         <a
-          href="/resume.pdf"
+          href="/fazle-azim-resume.pdf"
           download
           className="hidden md:inline-block bg-blue-600 text-white px-4 py-2 rounded-lg shadow-md hover:bg-blue-700 transition"
         >

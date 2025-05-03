@@ -19,22 +19,30 @@ const Education = () => {
   ];
 
   return (
-    <section className="w-full py-12 px-4 md:px-8 lg:px-16 bg-gradient-to-r from-green-400 to-blue-500 text-white">
+    <section className="w-full py-12 px-4 md:px-8 lg:px-16 bg-base-100 text-gray-900 dark:text-white">
       <div className="max-w-5xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-10">Educational Qualification</h2>
-        
-        <div className="flex flex-col items-center gap-6">
-          {educationData.map((education, index) => (
+        <h2 className="text-4xl font-bold text-center mb-12 border-b-2 border-gray-300 pb-4 dark:border-gray-600">
+          Educational Qualification
+        </h2>
+
+        <div className="flex flex-col gap-8">
+          {educationData.map((edu, idx) => (
             <div
-              key={index}
-              className="w-full max-w-lg md:max-w-2xl p-6 bg-white text-gray-900 rounded-lg shadow-md hover:shadow-lg transition transform hover:scale-105"
+              key={idx}
+              className="bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-700 rounded-lg p-6 shadow-sm hover:shadow-md transition duration-300"
             >
-              <h3 className="text-xl md:text-2xl font-semibold text-blue-600">{education.degree}</h3>
-              <p className="text-base md:text-lg"><strong className="text-gray-700">Institution:</strong> {education.institution}</p>
-              <p className="text-base md:text-lg"><strong className="text-gray-700">Year:</strong> {education.year}</p>
-              {education.cgpa && <p className="text-base md:text-lg"><strong className="text-gray-700">CGPA:</strong> {education.cgpa}</p>}
-              {education.gpa && <p className="text-base md:text-lg"><strong className="text-gray-700">GPA:</strong> {education.gpa}</p>}
-              <p className="text-base md:text-lg"><strong className="text-gray-700">Description:</strong> {education.description}</p>
+              <h3 className="text-2xl font-semibold text-black dark:text-white mb-2">
+                {edu.degree}
+              </h3>
+              <p className="text-gray-700 dark:text-gray-300 mb-1"><strong>Institution:</strong> {edu.institution}</p>
+              <p className="text-gray-700 dark:text-gray-300 mb-1"><strong>Year:</strong> {edu.year}</p>
+              {edu.cgpa && (
+                <p className="text-gray-700 dark:text-gray-300 mb-1"><strong>CGPA:</strong> {edu.cgpa}</p>
+              )}
+              {edu.gpa && (
+                <p className="text-gray-700 dark:text-gray-300 mb-1"><strong>GPA:</strong> {edu.gpa}</p>
+              )}
+              <p className="text-gray-700 dark:text-gray-300"><strong>Description:</strong> {edu.description}</p>
             </div>
           ))}
         </div>
