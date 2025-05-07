@@ -8,6 +8,7 @@ import Education from './Education';
 import MyProject from './MyProject';
 import ContractInfo from './ContractInfo';
 import Footer from './Footer';
+import Collaboration from './Collaboration';
 
 const Home = () => {
     return (
@@ -19,6 +20,7 @@ const Home = () => {
             <Skill></Skill>
             <Education></Education>
             <MyProject></MyProject>
+            <Collaboration></Collaboration>
             <ContractInfo></ContractInfo>
         </div>
     );

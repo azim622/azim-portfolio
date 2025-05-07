@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 const AboutMe = () => {
     return (
         <div className="flex justify-center">
-            <section className="max-w-4xl mx-auto px-8 py-12 border-2 border-blue-600 rounded-lg shadow-lg bg-white text-center">
+            <section className="max-w-4xl mt-10 mx-auto px-8 py-12 border-2 border-blue-600 rounded-lg shadow-lg bg-white text-center">
                 <motion.h2 
                     initial={{ opacity: 0, y: -20 }} 
                     animate={{ opacity: 1, y: 0 }} 

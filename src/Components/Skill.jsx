@@ -37,7 +37,7 @@ const Skill = () => {
 
   return (
     <section className="py-12 px-6 md:px-12 lg:px-20 bg-base-100">
-      <h2 className="text-4xl font-bold text-center text-gray-800 mb-12">Skills</h2>
+      <h2 className="text-4xl font-bold mt-10 text-center text-gray-800 mb-12">Skills</h2>
       {skillsData.map((category) => (
         <div key={category.category} className="mb-16">
           <h3 className="text-2xl font-semibold text-gray-700 mb-6">{category.category}</h3>
